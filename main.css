@@ -1,0 +1,54 @@
+body{
+    background-image: url("machogif.gif");
+}
+#header{
+    color: tomato;
+    animation-name: flash2;
+    animation-duration: .15s;
+    animation-iteration-count: infinite;
+    font-size: 200px;
+    font-family: fantasy;
+    position:fixed;
+    margin-top: 0px;
+    }
+h2{
+    color:tomato;
+    background-color: yellow;
+    font-size: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: right;
+
+}
+p{
+    color: rgb(241, 6, 241);
+    background-color: rgba(104, 145, 24, 0.85);
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+img{
+    border-color: rgb(241, 6, 241);
+    border: 15px dashed yellowgreen;
+
+}
+
+
+    #flashThis{
+        animation-name: flash2;
+        animation-duration: .25s;
+        animation-iteration-count: infinite;
+
+    }
+    #flashMe {
+        animation-name: flash1;
+        animation-duration: .25s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes flash1 {
+        from {background-color: rgba(255, 115, 0, 0.75);}
+        to{background-color: rgba(0, 255, 234, 0.75);}
+    }
+    @keyframes flash2 {
+        from {background-color:rgb(0, 238, 255);}
+        to{background-color:rgb(200, 255, 0);}
+    }
